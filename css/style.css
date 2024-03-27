@@ -267,4 +267,83 @@ https://css-tricks.com/introduction-reduced-motion-media-query/
     nav ul li, nav{
         display: none;
     }
+
+    /* NEW CODE, CHANGES FOR COMPLETE */
+
+    .bacon-photos, .fitz-photos, .sage-photos, .lulu-photos, .rocket-photos, .zucchini-photos, .curry-photos, .blat-photos {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    
+}
+
+@media screen and (min-width: 900px) {
+   
+    body {
+        background-color: #CCCCCC;
+    }
+
+    img {
+        min-width: 50%;
+    }
+
+    .bacon-photos, .fitz-photos, .sage-photos, .lulu-photos, .rocket-photos, .zucchini-photos, .curry-photos, .blat-photos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+    }
+
+    .bacon-photos img, .fitz-photos img, .sage-photos img, .lulu-photos img, .rocket-photos img, .zucchini-photos img, .curry-photos img, .blat-photos img {
+        min-width: 100%;
+    }
+
+    /* CHALLENGE ITEM  */
+
+    /* .collapsible-menu {
+        visibility: visible;
+        background: #ECFF4D;
+        position: static;
+    } */
+
+    button {
+        animation: shake 2s linear infinite;
+        position: absolute;
+        background-color: #ECFF4D;
+        left: 25%;
+        height: 3em;
+        width: 30em;
+        font-size: 1em;
+        border: 5px solid #9900CC;
+    }
+
+    @keyframes shake {
+        0%, 5% {
+            transform: rotateZ(0);
+        }
+
+        15% {
+            transform: rotateZ(-15deg);
+        }
+
+        20% {
+            transform: rotateZ(10deg);
+        }
+
+        25% {
+            transform: rotateZ(-10deg);
+        }
+
+        30% {
+            transform: rotateZ(7deg);
+        }
+
+        35% {
+            transform: rotateZ(-5deg);
+        }
+
+        40%, 100% {
+            transform: rotateZ(0);
+        }
+    }
 }
