@@ -5,20 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "stylesheet" href = "css/html5reset.css">
     <link rel = "stylesheet" href = "css/style.css">
-    <!-- <script type="text/javascript">
-        function displayInformation () {
-            document.querySelector('h1').innerHTML = "Dante's Recipes Gallery";
-            document.querySelector('#URL').innerHTML = document.URL;
-            // document.getElementById('URL').innerHTML = document.URL;
-            document.querySelector('#items').innerHTML = document.querySelectorAll('h2').length;
-            // document.getElementByID('items').innerHTML = document.querySelectorAll('h2').length;
-            document.querySelector('#time').innerHTML = new Date();
-            document.body.style.backgroundColor = "beige";
-        }
-        function copyFunction() {
-            document.querySelector('#cheer').innerHTML += "<br>Go Blue!\n"
-        }
-    </script> -->
+    
     <title>Recipes</title>
 </head>
 <body>
@@ -26,7 +13,7 @@
     <header>
         
         <!-- NEW HTML FOR COMPLETE VIEW  -->
-        <button>Click on "Menu"!</button>
+        <button id = "click">Click on "Menu"!</button>
         
         <!-- NEW HTML FOR COLLAPSIBLE MENU  -->
         
@@ -86,19 +73,6 @@
                 <img src = "images/Zucchini_fritters_2.jpeg" width = "200" alt = "Grated zucchini">
                 <img src = "images/Zucchini_fritters_3.jpeg" width = "200" alt = "Ingredients for zucchini fritters combined">
                 <img src = "images/Zucchini_fritters_4.jpg" width = "200" alt = "Zucchini fritters in the pan cooking">
-            </div>
-            <div>
-                <h2>Use JavaScript to display the following information here:</h2>
-                <p>
-                    The URL of this page is: <span id = "URL"></span><br/>
-                    The number of H2 items for this page: <span id = "items"></span><br/>
-                    The current date/time is: <span id = "time"></span><br/>
-                </p>
-    
-                <p oncopy="copyFunction()">Thank you for visiting!</p>
-    
-                
-                <div id="cheer"></div>
             </div>
     
             <h2>Chicken Curry</h2>
@@ -171,5 +145,6 @@
         <div></div>
         <div></div>
     </main>
+    <script src="js/script.js"></script>
 </body>
 </html>

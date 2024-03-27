@@ -309,10 +309,10 @@ https://css-tricks.com/introduction-reduced-motion-media-query/
     button {
         animation: shake 2s linear infinite;
         position: absolute;
+        left: 29em;
         background-color: #ECFF4D;
-        left: 25%;
         height: 3em;
-        width: 30em;
+        width: 15em;
         font-size: 1em;
         border: 5px solid #9900CC;
     }
@@ -323,27 +323,32 @@ https://css-tricks.com/introduction-reduced-motion-media-query/
         }
 
         15% {
-            transform: rotateZ(-15deg);
+            transform: rotateZ(-5deg);
         }
 
         20% {
-            transform: rotateZ(10deg);
+            transform: rotateZ(4deg);
         }
 
         25% {
-            transform: rotateZ(-10deg);
+            transform: rotateZ(-4deg);
         }
 
         30% {
-            transform: rotateZ(7deg);
+            transform: rotateZ(2deg);
         }
 
         35% {
-            transform: rotateZ(-5deg);
+            transform: rotateZ(-1deg);
         }
 
         40%, 100% {
             transform: rotateZ(0);
         }
+    }
+
+    label {
+        font-family: 'Times New Roman', Times, serif;
+        color: #9900CC;
     }
 }
